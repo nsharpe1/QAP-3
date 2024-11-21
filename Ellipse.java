@@ -36,4 +36,10 @@ public class Ellipse extends Shape {
     public String toString() {
         return super.toString() + " " + "Area: " + getArea() + " " + "Perimeter: " + getPerimeter();
     }
+
+    @Override
+    public void scale(int scaleFactor) {
+        a = a * scaleFactor;
+        b = b * scaleFactor;
+    }
 }

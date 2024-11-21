@@ -27,4 +27,9 @@ public class EquilateralTriangle extends Shape {
     
         return super.toString() + " " + "Area: " + getArea() + " " + "Perimeter: " + getPerimeter();
     }
+
+    @Override
+    public void scale(int scaleFactor) {
+        a = a * scaleFactor;
+    }
 }
